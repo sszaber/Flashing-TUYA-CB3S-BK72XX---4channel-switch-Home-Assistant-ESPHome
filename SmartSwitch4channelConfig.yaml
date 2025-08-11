@@ -1,0 +1,107 @@
+esphome:
+  name: cb3s4ch
+  friendly_name: CB3S4ch
+
+bk72xx:
+  board: cb3s
+
+logger:
+
+api:
+
+ota:
+
+
+wifi:
+  ssid: 
+  password: 
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Cb3S4Ch Fallback Hotspot"
+    password: "68D5u66qO7qh"
+
+web_server:
+  port: 80
+
+captive_portal:
+
+
+
+
+sensor:
+  - platform: uptime
+    name: Uptime
+
+binary_sensor:
+  - platform: gpio
+    id: binary_switch_1
+    pin:
+      number: P8
+      inverted: true
+      mode: INPUT_PULLUP
+    on_press:
+      then:
+        - switch.toggle: switch_1
+  - platform: gpio
+    id: binary_switch_2
+    pin:
+      number: P9
+      inverted: true
+      mode: INPUT_PULLUP
+    on_press:
+      then:
+        - switch.toggle: switch_2
+  - platform: gpio
+    id: binary_switch_3
+    pin:
+      number: P10
+      inverted: true
+      mode: INPUT_PULLUP
+    on_press:
+      then:
+        - switch.toggle: switch_3
+  - platform: gpio
+    id: binary_switch_4
+    pin:
+      number: P11
+      inverted: true
+      mode: INPUT_PULLUP
+    on_press:
+      then:
+        - switch.toggle: switch_4
+  - platform: gpio
+    id: binary_switch_all
+    pin:
+      number: P7
+      inverted: true
+      mode: INPUT_PULLUP
+    on_press:
+      then:
+        - switch.toggle: switch_1
+        - switch.toggle: switch_2
+        - switch.toggle: switch_3
+        - switch.toggle: switch_4
+
+switch:
+  - platform: gpio
+    id: switch_1
+    name: Open Gate
+    pin: P24
+  - platform: gpio
+    id: switch_2
+    name: Close Gate
+    pin: P6
+  - platform: gpio
+    id: switch_3
+    name: Stop Gate
+    pin: P26
+  - platform: gpio
+    id: switch_4
+    name: Gate SbS
+    pin: P14
+
+status_led:
+  pin:
+    number: P22
+    inverted: true
