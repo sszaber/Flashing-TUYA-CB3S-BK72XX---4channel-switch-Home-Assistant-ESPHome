@@ -3,7 +3,7 @@ In this video you can se how to connect,  backup and flash ESPHome  - BK72XX CB3
 This requires some soldering skills, but the rest is simple.
 link to video - https://www.youtube.com/watch?v=8wT5jUDrLpM
 1. Desolder the board from the device
-2. Solder the wires to the board according to the diagram.
+2. Solder the wires to the board according to the diagram. https://github.com/sszaber/Flashing-TUYA-CB3S-BK72XX---4channel-switch-Home-Assistant-ESPHome/blob/main/wiring%20diagram.png
 3. Create new device on ESPHome
 4. Fill WIFI SSID and PASSWORD
 5. Download project UF2 file type
