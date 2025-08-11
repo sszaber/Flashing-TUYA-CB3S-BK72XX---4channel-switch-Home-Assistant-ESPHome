@@ -1,7 +1,7 @@
 Flashing TUYA CB3S BK72XX - 4channel switch Home Assistant ESPHome. 
 In this video you can se how to connect,  backup and flash ESPHome  - BK72XX CB3S board.
 This requires some soldering skills, but the rest is simple.
-
+Wath this vide with subtitles.
 
 [![Watch the video](https://img.youtube.com/vi/8wT5jUDrLpM/maxresdefault.jpg)](https://youtu.be/8wT5jUDrLpM)
 
