@@ -17,3 +17,6 @@ Watch this vide with subtitles.
 8. Use ltchiptool to flash board link - https://github.com/libretiny-eu/ltchiptool/releases
 9. Short the CAN (RST) pin to ground to establish the connection.
 10. FINISH, you can solder back your board. 
+
+I have information on how to flash without soldering, but it is not confirmed because I have not tested it myself.
+Remove 2 capacitors connected to the Tx/Rx pins and located close to the first 2 push buttons (they are a low pass filter for debouncing the push buttons).
