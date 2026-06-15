@@ -20,3 +20,4 @@ Watch this vide with subtitles.
 
 I have information on how to flash without soldering, but it is not confirmed because I have not tested it myself.
 Remove 2 capacitors connected to the Tx/Rx pins and located close to the first 2 push buttons (they are a low pass filter for debouncing the push buttons).
+<img width="2048" height="945" alt="board" src="https://github.com/user-attachments/assets/1e3c8037-a6e0-42e2-9a6b-cfc044640767" />
